@@ -1,9 +1,9 @@
-import { 
-  Controller, 
-  Post, 
-  Body, 
-  UseGuards, 
-  Request, 
+import {
+  Controller,
+  Post,
+  Body,
+  UseGuards,
+  Request,
   ValidationPipe,
   HttpCode,
   HttpStatus,

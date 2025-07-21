@@ -64,12 +64,15 @@ export class AuthService {
 
   async validateUser(email: string, password: string): Promise<any> {
     const user = await this.userService.findByEmail(email);
-    
-    if (user && await this.userService.validatePassword(password, user.password_hash)) {
+
+    if (
+      user &&
+      (await this.userService.validatePassword(password, user.password_hash))
+    ) {
       const { password_hash, ...result } = user;
       return result;
     }
-    
+
     return null;
   }
 }
