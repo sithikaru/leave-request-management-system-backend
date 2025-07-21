@@ -5,6 +5,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
+import { AdminModule } from './admin/admin.module';
+import { ManagerModule } from './manager/manager.module';
+import { EmployeeModule } from './employee/employee.module';
 import { User } from './entities/user.entity';
 
 @Module({
@@ -23,6 +26,9 @@ import { User } from './entities/user.entity';
     }),
     AuthModule,
     UserModule,
+    AdminModule,
+    ManagerModule,
+    EmployeeModule,
   ],
   controllers: [AppController],
   providers: [AppService],
