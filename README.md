@@ -28,7 +28,7 @@ NestJS-based backend API for the Leave Request Management System (LRMS). This ba
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/sithikaru/leave-request-management-system-backend.git
 cd leave-request-management-system-backend
 ```
 
